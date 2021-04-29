@@ -3,12 +3,12 @@
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  background-color: rgb(221, 140, 109);
-  background-image: url('/assets/img/nala.jpg');
-  background-repeat: no-repeat, repeat;
+  background-color: rgb(2, 2, 2);
+  background-image: url('/assets/img/pica.jpg');
+  background-repeat:  repeat;
 
-  background-size: 1400px 800px;
-
+  background-size: 1150px 1000px;
+	top: 200px;
 
 }
 body {
@@ -18,10 +18,7 @@ body {
   align-items: center;
   background-color: rgb(221, 140, 109);
   background-repeat: no-repeat, repeat;
-
   background-size: 1400px 800px;
-
-
 }
 
 .volverPokedex {
@@ -37,6 +34,14 @@ body {
 	z-index: 99;
   border: 2px solid rgb(5, 0, 0);
 }
+
+
+
+.gifPica{
+  width: 200px;
+
+}
+
 
 .cantidadPoke .custom-select{
   width: 68px;
@@ -77,7 +82,13 @@ color:#a1a1a1;
 
 }
 
+.btnRoute{
 
+  box-shadow: 2px 2px 10px #ffffff;
+}
+.header{
+  box-shadow: 3px 3px 10px 3px #8a0000;
+}
 
 
 .agrandImgPoke{
@@ -87,10 +98,13 @@ color:#a1a1a1;
 
 .buscador{
   border: 1px solid rgb(250, 250, 250);
-  background:linear-gradient(rgb(236, 235, 137), rgb(239, 240, 239));
+  background:linear-gradient(rgb(73, 73, 66), rgb(239, 240, 239));
+  }
+.liLista{
+  background:rgb(175, 175, 169);
+  border: none;
 
 }
-
 
 .noSeEncontro{
   width: 390px;;

@@ -23,7 +23,7 @@
 
   <!-- buscador pokedex -->
   <div class="container">
-    <div class="">
+    <div class="header">
       <form class="needs-validation">
         <div class="buscador card p-1 text-left shadow-sm  mb-1 bg-white rounded border-top-0">
           <div class="p-2">  
@@ -37,7 +37,7 @@
                   <input type="text" class="form-control" id="findPokemon" required placeholder="Busca tu Pokemon" required>
                 </div>
                 <div class="col-4 my-class-form-control-group .justify-content-center">
-                  <button  type="button" class="btn btn-success" id="consultarPoke" onclick="pokemonController.buscarPokemonInfo();">
+                  <button  type="button" class="btn btn-dark" id="consultarPoke" onclick="pokemonController.buscarPokemonInfo();">
                     Consultar 
                   </button>
                 </div>
@@ -48,7 +48,7 @@
       </form>  
     </div>
     <div class="volverPokedex">
-      <a href="./listaPokemones.html" class="btn btn-success fluid" >
+      <a href="./listaPokemones.html" class="btn btn-dark fluid btnRoute" >
         Ver Lista de Pokemon
       </a>
     </div>
@@ -57,6 +57,8 @@
       <div class="row " id="muestraPoke"></div>
     </div>
   </div>  
+
+
 </body>
 </html>
 
