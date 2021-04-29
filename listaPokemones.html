@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokedex Naranja</title>
+    <script src="js/jquery.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/libs/axios.min.js"></script>
+    <script src="js/libs/validators.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link
+    rel="icon"
+    type="image/gif/jpg"
+    href="https://image.winudf.com/v2/image/bmV0LmFudGFmdW5ueS5wb2tlbW9uZ28uZ3VpZGUuZXhwZXJ0X2ljb25fMTUwNjAyMjk4NF8wOTc/icon.png?w=170&fakeurl=1"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+
+    
+    <div class="sticky-top">
+        
+        <form class="needs-validation">
+            <div class="buscador card p-1 text-left shadow-sm  mb-1 bg-white rounded border-top-0">
+                <div class="p-2">  
+                    <form class="needs-validation">
+                        <div class="container">
+                            <div class="row p-4d-flex justify-content-between">
+                                <div class="col-12 text-center mt-3">
+                                    <h2 class="title-reservar">LISTA DE POKEMONES</h2>
+                                </div>
+                            </div>
+                        </div>  
+                    </form>
+                </div>
+            </div>
+        </form>  
+    </div>
+    <div class="volverPokedex">
+        <a href="./index.html" class="btn btn-success fluid" >
+            Volver al Pokedex
+        </a>
+    </div>
+<div class="container">
+<div class="card-columns " id="todosPokemon">
+    
+</div>        
+    </div>
+
+
+
+
+
+</body>
+</html>
+
+<script src="js/models/Pokemon.js"></script>
+<script src="js/controlers/PokemonController.js"></script>
+<script src="js/services/PokemonService.js"></script>
+
+<script>
+  var pokemonController = new PokemonController();
+  pokemonController.listaPokemones();
+</script>

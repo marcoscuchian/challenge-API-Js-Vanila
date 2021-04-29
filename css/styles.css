@@ -1,0 +1,130 @@
+.bodyInd {
+
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: rgb(214, 187, 187);
+  background-image: url('/assets/img/nala.jpg');
+  background-repeat: no-repeat, repeat;
+
+  background-size: 1400px 800px;
+
+
+}
+body {
+
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: rgb(221, 140, 109);
+  background-repeat: no-repeat, repeat;
+
+  background-size: 1400px 800px;
+
+
+}
+
+.volverPokedex {
+	font-size: 18px; /* Cambiar el tamaño de la tipografia */
+	text-transform: uppercase; /* Texto en mayusculas */
+	font-weight: bold; /* Fuente en negrita o bold */
+	color: #ffffff; /* Color del texto */
+	border-radius: 5px; /* Borde del boton */
+	letter-spacing: 2px; /* Espacio entre letras */
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	z-index: 99;
+  border: 2px solid rgb(5, 0, 0);
+}
+
+
+body,
+html,
+input {
+font-family: "Montserrat", sans-serif;
+font-size: 12pt;
+}
+label{
+font-size:11pt;
+vertical-align: middle;
+padding: 0px;
+margin: 0px;
+height: 20px;
+margin-right: 12px;
+color:#a1a1a1;
+
+}
+.title-reservar{
+  font-family: "Montserrat", sans-serif;
+  color: #132b24;
+  font-weight: bold;
+
+}
+
+
+.chikorita{
+  width: 70px;
+  height: 70px;
+}
+
+.agrandImgPoke{
+  height: 370px;
+  width: 370px;
+}  
+
+.buscador{
+  border: 1px solid rgb(250, 250, 250);
+  background:linear-gradient(rgb(236, 235, 137), rgb(239, 240, 239));
+
+}
+
+
+.noSeEncontro{
+  width: 390px;;
+  height: 390px;
+}
+
+
+
+
+
+
+button{
+      padding-left:20px;
+      padding-right:20px;
+}
+
+
+.my-class-form-control-group{
+display:flex;
+align-items:center;
+padding-top: 23px;
+}
+.card {
+box-shadow: 7px 7px 7px -7px #333;
+}
+
+
+.imgPoke {
+    width: 286px;
+    height: 286px;
+}
+
+
+
+.logo {
+  justify-self: start;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  text-align: center;
+  height: 40px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
