@@ -13,44 +13,33 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link
-    rel="icon"
-    type="image/gif/jpg"
-    href="https://image.winudf.com/v2/image/bmV0LmFudGFmdW5ueS5wb2tlbW9uZ28uZ3VpZGUuZXhwZXJ0X2ljb25fMTUwNjAyMjk4NF8wOTc/icon.png?w=170&fakeurl=1"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-    rel="stylesheet"
-  />
+      rel="icon"
+      type="image/gif/jpg"
+      href="https://image.winudf.com/v2/image/bmV0LmFudGFmdW5ueS5wb2tlbW9uZ28uZ3VpZGUuZXhwZXJ0X2ljb25fMTUwNjAyMjk4NF8wOTc/icon.png?w=170&fakeurl=1"
+    />
 </head>
 <body class="bodyInd">
 
 
+  <!-- buscador pokedex -->
   <div class="container">
-    <!-- buscador pokedex -->
-
     <div class="">
       <form class="needs-validation">
         <div class="buscador card p-1 text-left shadow-sm  mb-1 bg-white rounded border-top-0">
           <div class="p-2">  
             <form class="needs-validation">
               <div class="row p-4d-flex justify-content-between">
-                <div class="col-5 mt-3">
+                <div class="col-4 mt-3">
                   <h2 class="title-reservar">P O K E D E X</h2>
                 </div>
-                <div class="col-3">
-                  <label for="nombre">Nombre o id del pokemon</label>
-                  <input type="text" class="form-control" id="findPokemon" required  >
+                <div class="col-4">
+                  <label for="nombre"></label>
+                  <input type="text" class="form-control" id="findPokemon" required placeholder="Busca tu Pokemon" required>
                 </div>
-
-                <div class="col-2 my-class-form-control-group .justify-content-center">
-                  <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Guardar" onclick="pokemonController.buscarPokemonInfo()">
+                <div class="col-4 my-class-form-control-group .justify-content-center">
+                  <button  type="button" class="btn btn-success" id="consultarPoke" onclick="pokemonController.buscarPokemonInfo();">
                     Consultar 
                   </button>
-                </div>
-                <div class="col-2 p-0 my-class-form-control-group .justify-content-center fluids">
-                  <a href="./listaPokemones.html" class="btn btn-success fluid">
-                    Ver Lista de Pokemon
-                  </a>
                 </div>
               </div>
             </form>
@@ -58,18 +47,16 @@
         </div>
       </form>  
     </div>
+    <div class="volverPokedex">
+      <a href="./listaPokemones.html" class="btn btn-success fluid" >
+        Ver Lista de Pokemon
+      </a>
+    </div>
     <!-- CARDS POKEMONES -->
     <div class="container d-flex justify-content-center">
-        <div class="row " id="muestraPoke">
-
-        <br>
+      <div class="row " id="muestraPoke"></div>
     </div>
-</div>
-
-
-
-
-
+  </div>  
 </body>
 </html>
 

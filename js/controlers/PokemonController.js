@@ -4,8 +4,9 @@ class PokemonController{
     rowHtml;
     cardHtml ="";
 
-    buscarPokemonInfo(name) {
+    buscarPokemonInfo() {
         let findPokemon = document.getElementById('findPokemon').value;
+        console.log("se ejecuta pokeinfoo")
         findPokemon = findPokemon.toLowerCase()
         if(findPokemon){
             pokemonService.getByPoke(findPokemon)
@@ -123,15 +124,34 @@ class PokemonController{
 
     };
 
+    cantidadSelect(){
+        let cantidad = document.getElementById('cantidadSelect').value;
+        console.log(cantidad);
 
+        switch(cantidad){
+            case "1":
+                this.listaPokemones(50)
+                break;
+            case "2":
+                this.listaPokemones(75)
+                break;
+            case "3":
+                this.listaPokemones(100)
+
+                break;
+            default:
+                this.listaPokemones(30)
+
+        };
+
+
+    }
 
     
-    listaPokemones(){
-    
-    var n = 1;
-    while  (n < 50){
-
-        if(n > 2){
+    listaPokemones(cantidad){
+        var n = 0;
+        cantidad+=1;
+    while  (n < cantidad){
             console.log(n)
             pokemonService.getByPoke(n)
             .then(res => {
@@ -141,18 +161,19 @@ class PokemonController{
                 <ul class="list-group list-group-flush">
                 <li class="list-group-item"> <h3>Nombre: ${res.name}</h3></li>
                 <li class="list-group-item"><h3>Numero: ${res.id}</h3></li>
+                </li>
                 </ul>
                 </div>    
                 `;
                 document.getElementById('todosPokemon').innerHTML=this.cardHtml;
             })
-        }
+
         n+=1;
     }
 
     };
 
 
-
+    
 
 }
